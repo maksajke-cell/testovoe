@@ -1,0 +1,12 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="button">
+<g id="Ellipse 3204">
+<ellipse cx="16" cy="16" rx="16" ry="16" fill="white"/>
+<mask id="stroke0_0_6" fill="white">
+<path d="M32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16Z"/>
+</mask>
+<ellipse cx="16" cy="16" rx="16" ry="16" stroke-width="2" stroke="#212429" mask="url(#stroke0_0_6)"/>
+</g>
+<path id="svg" d="M20 14L16 18L12 14" stroke="#212429"/>
+</g>
+</svg>
