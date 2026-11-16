@@ -1,0 +1,19 @@
+/* Motion layer only. Layout, typography and base hero background come from Figma. */
+.np-motion-hero { position: relative; isolation: isolate; }
+.np-motion-light-stage { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: -1; }
+.np-motion-light {
+  position: absolute; top: -45%; bottom: -45%; left: 0; width: 72%;
+  background: linear-gradient(90deg, transparent, rgb(255 255 255 / .18) 24%, rgb(255 255 255 / .48) 50%, rgb(255 255 255 / .16) 74%, transparent);
+  opacity: 0; pointer-events: none;
+}
+.np-motion-track { position: relative; isolation: isolate; touch-action: pan-y; }
+.np-motion-blob { position: absolute; left: 0; top: 0; border-radius: 999px; pointer-events: none; transform-origin: center; z-index: -1; background: var(--np-ink, #212429); }
+.np-motion-track [data-np-tab] { background: transparent !important; color: var(--np-ink, #212429) !important; }
+.np-motion-labels { position: absolute; left: 0; top: 0; pointer-events: none; z-index: 2; color: var(--np-white, #FFFFFF); }
+.np-motion-label { position: absolute; display: flex; align-items: center; justify-content: center; white-space: nowrap; color: inherit; }
+.section-track [data-np-tab]{border-radius:999px;transition:box-shadow 180ms cubic-bezier(.23,1,.32,1),opacity 180ms}
+.section-track [data-np-tab]:not([aria-current=location]):hover{box-shadow:inset 0 0 0 1px rgb(33 36 41 / .09),inset 0 0 0 999px rgb(33 36 41 / .035);opacity:1}
+.np-motion-blob{transition:filter 180ms cubic-bezier(.23,1,.32,1)}
+.section-track:has([aria-current=location]:hover) .np-motion-blob{filter:brightness(1.12)}
+.np-motion-light{filter:blur(16px);background:linear-gradient(90deg,transparent,rgb(255 255 255 / .09) 24%,rgb(255 255 255 / .24) 50%,rgb(255 255 255 / .08) 74%,transparent)}
+@media (prefers-reduced-motion: reduce) { .np-motion-light { display: none; } }
